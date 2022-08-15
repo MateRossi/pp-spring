@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 public class ClienteServiceImpl implements ClienteService {
 
-    //Singleton: Injetar os componentes do Spring com @Autowired.
+    //Singleton: Injetar os componentes do Spring com @Autowired (feito).
     @Autowired
     private ClienteRepository clienteRepository;
 
@@ -24,8 +24,8 @@ public class ClienteServiceImpl implements ClienteService {
     @Autowired
     private ViaCepService viaCepService;
 
-    //Strategy: Implementar os métodos definidos na interface.
-    //Facade: Abstrair intergrações com subsistemas, provendo uma interface simples.
+    //Strategy: Implementar os métodos definidos na interface (feito).
+    //Facade: Abstrair intergrações com subsistemas, provendo uma interface simples (viaCep - feito).
 
     @Override
     public Iterable<Cliente> buscarTodos() {
